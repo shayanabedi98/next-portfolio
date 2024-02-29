@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: rgb(14, 14, 14);
+  --primary-color: #0e0e0e;
   --secondary-color: #f91e5a;
-  --accent-color: rgb(190, 4, 54);
+  --accent-color: #be0436;
   --primary-text-color: rgb(245, 245, 245);
   --secondary-text-color: rgb(214, 214, 214);
   --font: "Quicksand", sans-serif;
@@ -23,4 +23,6 @@
 body {
   background-color: var(--primary-color);
   color: var(--primary-text-color);
+  padding: 0;
+  margin: 0;
 }

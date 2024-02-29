@@ -26,8 +26,8 @@ export default function Hero() {
   };
 
   return (
-    <motion.div className="relative">
-      <div className="flex gap-20 items-center justify-center px-24 my-52">
+    <div className="">
+      <div className="flex gap-20 items-center justify-center my-52">
         <div className="">
           <Sidebar />
         </div>
@@ -70,6 +70,6 @@ export default function Hero() {
           />
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 }

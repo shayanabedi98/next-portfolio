@@ -3,6 +3,7 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Sidebar() {
   return (
@@ -16,8 +17,12 @@ export default function Sidebar() {
         filter: { delay: 1, duration: 2, ease: "easeInOut" },
       }}
     >
-      <FaGithub fill="#f91e5a" />
-      <FaLinkedin fill="#f91e5a" />
+      <Link target="_blank" href="https://github.com/shayanabedi98?">
+        <FaGithub fill="#f91e5a" />
+      </Link>
+      <Link target="_blank" href="https://www.linkedin.com/in/shayan-abedi-6b1320185/">
+        <FaLinkedin fill="#f91e5a" />
+      </Link>
     </motion.div>
   );
 }
