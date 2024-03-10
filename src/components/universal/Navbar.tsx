@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   return (
     <motion.div
-      className="fixed w-full right-0 left-0 px-24 flex justify-between py-5"
+      className="fixed w-full right-0 left-0 px-24 z-[1] bg-primary-color flex justify-between py-5"
       initial={{ top: -100, opacity: 0, filter: "blur(10px)" }}
       animate={{ top: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{

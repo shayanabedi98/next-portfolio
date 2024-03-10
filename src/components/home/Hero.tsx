@@ -3,28 +3,9 @@ import Image from "next/image";
 import avatar from "@/../public/assets/avatar2.png";
 import Sidebar from "../home/Sidebar";
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
-  const position = "Web Developer";
-
-  const containerAnimations = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 3.5,
-        staggerChildren: 0.15,
-      },
-    },
-  };
-
-  const childVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
-
   return (
     <div className="">
       <div className="flex gap-20 items-center justify-center my-52">
@@ -41,18 +22,25 @@ export default function Hero() {
             Hi, I&apos;m{" "}
             <span className="text-secondary-color">Shayan Abedi</span>.
           </motion.h1>
-          <motion.h2
-            className="text-secondary-text-color text-xl mt-4 w-full"
-            variants={containerAnimations}
-            initial="hidden"
-            animate="visible"
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2, duration: 1.5 }}
           >
-            {position.split("").map((char, index) => (
-              <motion.span key={index} variants={childVariants}>
-                {char}
-              </motion.span>
-            ))}
-          </motion.h2>
+            <TypeAnimation
+              sequence={[
+                "Web Developer",
+                5000,
+                "JavaScript/TypeScript",
+                2000,
+                "Next.js",
+                2000,
+              ]}
+              wrapper="h2"
+              speed={50}
+              repeat={Infinity}
+            />
+          </motion.div>
         </div>
         <motion.div
           className="flex w-1/2 justify-end"
