@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import avatar from "@/../public/assets/avatar2.png";
 import Sidebar from "../home/Sidebar";
@@ -23,21 +24,23 @@ export default function Hero() {
             <span className="text-secondary-color">Shayan Abedi</span>.
           </motion.h1>
           <motion.div
+          className="mt-content2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 2, duration: 1.5 }}
+            transition={{ delay: 0.2, duration: 1 }}
           >
             <TypeAnimation
               sequence={[
-                "Web Developer",
-                5000,
-                "JavaScript/TypeScript",
-                2000,
-                "Next.js",
-                2000,
+                3000,
+                "Frontend Developer",
+                3000,
+                "HTML, CSS/SASS, JavaScript/TypeScript",
+                3000,
+                "Tailwind, React, Next 14",
+                3000,
               ]}
               wrapper="h2"
-              speed={50}
+              speed={70}
               repeat={Infinity}
             />
           </motion.div>

@@ -20,6 +20,12 @@ const config: Config = {
         "primary-text-color": "var(--primary-text-color)",
         "secondary-text-color": "var(--secondary-text-color)"
         // "": "var()",
+      },
+      margin: {
+        "content": "var(--m-content)",
+        "content2": "var(--m-content2)",
+        "div": "var(--m-div)",
+        "div2": "var(--m-div2)",
       }
     },
   },
