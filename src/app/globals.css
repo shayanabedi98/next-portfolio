@@ -11,10 +11,10 @@
   --primary-text-color: rgb(245, 245, 245);
   --secondary-text-color: rgb(214, 214, 214);
   --font: "Quicksand", sans-serif;
-  --m-content: 32px;
-  --m-div: 80px;
+  --m-content: 60px;
+  --m-div: 160px;
   --m-content2: 16px;
-  --m-div2: 40px;
+  --m-div2: 80px;
 }
 
 *,
