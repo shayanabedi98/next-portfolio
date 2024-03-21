@@ -20,7 +20,7 @@ export default function Projects() {
       description:
         "This is a website that I built and maintained for a stone supply and fabrication company. Initially, it was built with a Node.js and Express.js backend and React client, then rebuilt with Next.js.",
       alt: "",
-      img: "/assets/projects/stonesvillage.jpg",
+      img: "/assets/projects/stonesvillage.JPG",
       href: "https://www.stonesvillage.net/",
       github: "https://github.com/shayanabedi98/stonesvillage-next",
       tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
@@ -30,7 +30,7 @@ export default function Projects() {
       description:
         "Pantheras.ca is a digital marketing platform I started with a couple of friends. This website was created to promote our services, which include graphic design, web development, SEO, and more.",
       alt: "",
-      img: "/assets/projects/pantheras.jpg",
+      img: "/assets/projects/pantheras.JPG",
       href: "https://pantheras.ca/",
       github: "https://github.com/shayanabedi98/panthera",
       tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
@@ -40,7 +40,7 @@ export default function Projects() {
       description:
         "This simple and user-friendly app is a representation of my CRUD capabilities in a simple React project.",
       alt: "",
-      img: "/assets/projects/todo.jpg",
+      img: "/assets/projects/todo.JPG",
       href: "https://todo-list-taupe-beta-44.vercel.app/",
       github: "https://github.com/shayanabedi98/todo-list",
       tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />],
@@ -50,7 +50,7 @@ export default function Projects() {
       description:
         "Using React and the TVmaze API, I built a TV show search app that can display a maximum of the 10 shows with images, which are most relavant to the search input.",
       alt: "",
-      img: "/assets/projects/tv.jpg",
+      img: "/assets/projects/tv.JPG",
       href: "https://tv-search-react.vercel.app/",
       github: "https://github.com/shayanabedi98/tv-search-react",
       tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />],
@@ -60,7 +60,7 @@ export default function Projects() {
       description:
         "This app calculates an Adult's BMI in both imperial and metric units. The result will be displayed next to a short and user-friendly chart explaining the result.",
       alt: "",
-      img: "/assets/projects/bmi.jpg",
+      img: "/assets/projects/bmi.JPG",
       href: "https://bmi-calculator-react-tau.vercel.app/",
       github: "https://github.com/shayanabedi98/bmi-calculator-react",
       tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />, <SiSass key={uuid()} />],
@@ -70,7 +70,7 @@ export default function Projects() {
       description:
         "This current website was built using Next.js. It will be one that I will constantly update and improve over time. Feel free to check out the source code for this too!",
       alt: "",
-      img: "/assets/projects/portfolio.jpg",
+      img: "/assets/projects/portfolio.JPG",
       href: "https://shayanabedi.com",
       github: "https://github.com/shayanabedi98/next-portfolio",
       tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
