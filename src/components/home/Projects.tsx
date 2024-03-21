@@ -11,6 +11,7 @@ import { SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiSass } from "react-icons/si";
+import {v4 as uuid} from 'uuid'
 
 export default function Projects() {
   const projectsList = [
@@ -22,7 +23,7 @@ export default function Projects() {
       img: "/assets/projects/stonesvillage.jpg",
       href: "https://www.stonesvillage.net/",
       github: "https://github.com/shayanabedi98/stonesvillage-next",
-      tech: [<SiNextdotjs />, <SiReact />, <SiTypescript />, <SiTailwindcss />],
+      tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
     },
     {
       name: "Pantheras Digital Marketing",
@@ -32,7 +33,7 @@ export default function Projects() {
       img: "/assets/projects/pantheras.jpg",
       href: "https://pantheras.ca/",
       github: "https://github.com/shayanabedi98/panthera",
-      tech: [<SiNextdotjs />, <SiReact />, <SiTypescript />, <SiTailwindcss />],
+      tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
     },
     {
       name: "To-Do App",
@@ -42,7 +43,7 @@ export default function Projects() {
       img: "/assets/projects/todo.jpg",
       href: "https://todo-list-taupe-beta-44.vercel.app/",
       github: "https://github.com/shayanabedi98/todo-list",
-      tech: [<SiReact />, <IoLogoJavascript />, <FaCss3Alt />],
+      tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />],
     },
     {
       name: "TV Show Search App",
@@ -52,7 +53,7 @@ export default function Projects() {
       img: "/assets/projects/tv.jpg",
       href: "https://tv-search-react.vercel.app/",
       github: "https://github.com/shayanabedi98/tv-search-react",
-      tech: [<SiReact />, <IoLogoJavascript />, <FaCss3Alt />],
+      tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />],
     },
     {
       name: "Adult BMI Calculator",
@@ -62,7 +63,7 @@ export default function Projects() {
       img: "/assets/projects/bmi.jpg",
       href: "https://bmi-calculator-react-tau.vercel.app/",
       github: "https://github.com/shayanabedi98/bmi-calculator-react",
-      tech: [<SiReact />, <IoLogoJavascript />, <FaCss3Alt />, <SiSass />],
+      tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />, <SiSass key={uuid()} />],
     },
     {
       name: "Portfolio Website",
@@ -72,7 +73,7 @@ export default function Projects() {
       img: "/assets/projects/portfolio.jpg",
       href: "https://shayanabedi.com",
       github: "https://github.com/shayanabedi98/next-portfolio",
-      tech: [<SiNextdotjs />, <SiReact />, <SiTypescript />, <SiTailwindcss />],
+      tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
     },
   ];
 
