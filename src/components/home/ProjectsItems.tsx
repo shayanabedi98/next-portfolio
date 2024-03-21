@@ -4,6 +4,7 @@ import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { IoGlobeOutline } from "react-icons/io5";
 import { AnimatePresence, delay, motion } from "framer-motion";
+import {v4 as uuid} from 'uuid'
 
 type Props = {
   img: string;
@@ -99,8 +100,8 @@ export default function ProjectItems({
                 Technologies
               </h3>
               <div className="flex items-center gap-10 text-3xl h-full">
-                {tech.map((item, idx) => {
-                  return <div key={idx}>{item}</div>;
+                {tech.map((item) => {
+                  return <div key={uuid()}>{item}</div>;
                 })}
               </div>
             </motion.div>
