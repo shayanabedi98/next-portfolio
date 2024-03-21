@@ -2,16 +2,12 @@
 
 import Image from "next/image";
 import avatar from "@/../public/assets/avatar2.png";
-import Sidebar from "../home/Sidebar";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
     <div className="flex gap-20 items-center justify-center mt-52">
-      <div className="">
-        <Sidebar />
-      </div>
       <div className="flex flex-col w-1/2 px-10">
         <motion.h1
           className="text-5xl font-semibold"
@@ -35,7 +31,7 @@ export default function Hero() {
               3000,
               "HTML, CSS/SASS, JavaScript/TypeScript",
               3000,
-              "Tailwind, React.js, Next.js 14",
+              "TailwindCSS, React.js, Next.js 14",
               3000,
             ]}
             wrapper="h2"

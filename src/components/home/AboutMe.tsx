@@ -10,7 +10,7 @@ export default function AboutMe() {
   });
 
   return (
-    <motion.div className="mt-64 flex flex-col justify-center">
+    <motion.div className="my-64 flex flex-col justify-center">
       <motion.h2
         className="text-4xl self-center font-semibold"
         ref={ref}
