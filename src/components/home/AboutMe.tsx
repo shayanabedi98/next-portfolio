@@ -60,7 +60,7 @@ export default function AboutMe() {
             }}
           >
             After countless months of head-scratching and keyboard smashing, I
-            finally got to build a website for my father's business in Next.js,
+            finally got to build a website for my father&apos;s business in Next.js,
             along with starting my own digital marketing agency with a couple of
             friends. My passion for creativity and building has brought me far
             as I continue to learn new technologies in this constantly improving

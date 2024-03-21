@@ -115,6 +115,7 @@ export default function Projects() {
                 animate="show"
               >
                 <ProjectItems
+                  key={index}
                   img={item.img}
                   alt={item.alt}
                   description={item.description}
