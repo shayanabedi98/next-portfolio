@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import ProjectItems from "./ProjectsItems";
 
+import { SiNextdotjs } from "react-icons/si";
+import { SiReact } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiSass } from "react-icons/si";
+
 export default function Projects() {
   const projectsList = [
     {
@@ -14,6 +22,7 @@ export default function Projects() {
       img: "/assets/projects/stonesvillage.jpg",
       href: "https://www.stonesvillage.net/",
       github: "https://github.com/shayanabedi98/stonesvillage-next",
+      tech: [<SiNextdotjs />, <SiReact />, <SiTypescript />, <SiTailwindcss />],
     },
     {
       name: "Pantheras Digital Marketing",
@@ -23,6 +32,7 @@ export default function Projects() {
       img: "/assets/projects/pantheras.jpg",
       href: "https://pantheras.ca/",
       github: "https://github.com/shayanabedi98/panthera",
+      tech: [<SiNextdotjs />, <SiReact />, <SiTypescript />, <SiTailwindcss />],
     },
     {
       name: "To-Do App",
@@ -32,6 +42,7 @@ export default function Projects() {
       img: "/assets/projects/todo.jpg",
       href: "https://todo-list-taupe-beta-44.vercel.app/",
       github: "https://github.com/shayanabedi98/todo-list",
+      tech: [<SiReact />, <IoLogoJavascript />, <FaCss3Alt />],
     },
     {
       name: "TV Show Search App",
@@ -41,6 +52,7 @@ export default function Projects() {
       img: "/assets/projects/tv.jpg",
       href: "https://tv-search-react.vercel.app/",
       github: "https://github.com/shayanabedi98/tv-search-react",
+      tech: [<SiReact />, <IoLogoJavascript />, <FaCss3Alt />],
     },
     {
       name: "Adult BMI Calculator",
@@ -50,6 +62,7 @@ export default function Projects() {
       img: "/assets/projects/bmi.jpg",
       href: "https://bmi-calculator-react-tau.vercel.app/",
       github: "https://github.com/shayanabedi98/bmi-calculator-react",
+      tech: [<SiReact />, <IoLogoJavascript />, <FaCss3Alt />, <SiSass />],
     },
     {
       name: "Portfolio Website",
@@ -59,6 +72,7 @@ export default function Projects() {
       img: "/assets/projects/portfolio.jpg",
       href: "https://shayanabedi.com",
       github: "https://github.com/shayanabedi98/next-portfolio",
+      tech: [<SiNextdotjs />, <SiReact />, <SiTypescript />, <SiTailwindcss />],
     },
   ];
 
@@ -107,6 +121,8 @@ export default function Projects() {
                   name={item.name}
                   github={item.github}
                   href={item.href}
+                  index={index}
+                  tech={item.tech}
                 />
               </motion.div>
             );
