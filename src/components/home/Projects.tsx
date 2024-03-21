@@ -2,11 +2,79 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ProjectItems from "./ProjectsItems";
 
 export default function Projects() {
+  const projectsList = [
+    {
+      name: "Stones Village Inc.",
+      description:
+        "This is a website that I built and maintained for a stone supply and fabrication company. Initially, it was built with a Node.js and Express.js backend and React client, then rebuilt with Next.js.",
+      alt: "",
+      img: "/assets/projects/stonesvillage.jpg",
+      href: "https://www.stonesvillage.net/",
+      github: "https://github.com/shayanabedi98/stonesvillage-next",
+    },
+    {
+      name: "Pantheras Digital Marketing",
+      description:
+        "Pantheras.ca is a digital marketing platform I started with a couple of friends. This website was created to promote our services, which include graphic design, web development, SEO, and more.",
+      alt: "",
+      img: "/assets/projects/pantheras.jpg",
+      href: "https://pantheras.ca/",
+      github: "https://github.com/shayanabedi98/panthera",
+    },
+    {
+      name: "To-Do App",
+      description:
+        "This simple and user-friendly app is a representation of my CRUD capabilities in a simple React project.",
+      alt: "",
+      img: "/assets/projects/todo.jpg",
+      href: "https://todo-list-taupe-beta-44.vercel.app/",
+      github: "https://github.com/shayanabedi98/todo-list",
+    },
+    {
+      name: "TV Show Search App",
+      description:
+        "Using React and the TVmaze API, I built a TV show search app that can display a maximum of the 10 shows with images, which are most relavant to the search input.",
+      alt: "",
+      img: "/assets/projects/tv.jpg",
+      href: "https://tv-search-react.vercel.app/",
+      github: "https://github.com/shayanabedi98/tv-search-react",
+    },
+    {
+      name: "Adult BMI Calculator",
+      description:
+        "This app calculates an Adult's BMI in both imperial and metric units. The result will be displayed next to a short and user-friendly chart explaining the result.",
+      alt: "",
+      img: "/assets/projects/bmi.jpg",
+      href: "https://bmi-calculator-react-tau.vercel.app/",
+      github: "https://github.com/shayanabedi98/bmi-calculator-react",
+    },
+    {
+      name: "Portfolio Website",
+      description:
+        "This current website was built using Next.js. It will be one that I will constantly update and improve over time. Feel free to check out the source code for this too!",
+      alt: "",
+      img: "/assets/projects/portfolio.jpg",
+      href: "https://shayanabedi.com",
+      github: "https://github.com/shayanabedi98/next-portfolio",
+    },
+  ];
+
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
+
+  const variants = {
+    hidden: { opacity: 0 },
+    show: (i: number) => ({
+      opacity: 1,
+      transition: {
+        delay: 1.5 + i * 0.2, // Increase the delay for each item
+      },
+    }),
+  };
 
   return (
     <div className="mt-64 flex flex-col justify-center">
@@ -21,6 +89,29 @@ export default function Projects() {
       >
         My <span className="text-secondary-color">Projects</span>
       </motion.h2>
+      <div className="mt-content grid grid-cols-2 gap-10">
+        {inView &&
+          projectsList.map((item, index) => {
+            return (
+              <motion.div
+                key={index}
+                custom={index}
+                variants={variants}
+                initial="hidden"
+                animate="show"
+              >
+                <ProjectItems
+                  img={item.img}
+                  alt={item.alt}
+                  description={item.description}
+                  name={item.name}
+                  github={item.github}
+                  href={item.href}
+                />
+              </motion.div>
+            );
+          })}
+      </div>
     </div>
   );
 }

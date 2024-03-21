@@ -59,21 +59,19 @@ export default function Technologies() {
       >
         My <span className="text-secondary-color">Technologies</span>
       </motion.h2>
-      <div className="mt-content grid grid-cols-3 gap-40">
-        <AnimatePresence>
-          {inView &&
-            technologiesList.map((item, index) => (
-              <motion.div
-                key={index}
-                custom={index}
-                variants={variants}
-                initial="hidden"
-                animate="show"
-              >
-                <TechnologiesItem icon={item.img} name={item.name} />
-              </motion.div>
-            ))}
-        </AnimatePresence>
+      <div className="mt-content grid grid-cols-3 gap-x-40 gap-y-16 min-h-[580px]">
+        {inView &&
+          technologiesList.map((item, index) => (
+            <motion.div
+              key={index}
+              custom={index}
+              variants={variants}
+              initial="hidden"
+              animate="show"
+            >
+              <TechnologiesItem icon={item.img} name={item.name} />
+            </motion.div>
+          ))}
       </div>
     </div>
   );
