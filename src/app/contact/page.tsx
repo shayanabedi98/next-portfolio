@@ -126,7 +126,7 @@ export default function Contact() {
           ></textarea>
         </div>
         <button
-          className={`bg-secondary-color rounded-md  w-40 h-[40px] hover:bg-accent-color transition duration-500 ease-in-out mx-auto ${
+          className={`bg-secondary-color rounded-md font-semibold w-40 h-[40px] hover:bg-accent-color transition duration-500 ease-in-out mx-auto ${
             sending ? "text-gray-300" : ""
           }`}
           type="submit"

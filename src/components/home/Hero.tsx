@@ -7,10 +7,10 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <div className="flex gap-20 items-center justify-center mt-52">
-      <div className="flex flex-col w-1/2 px-10">
+    <div className="flex flex-col lg:flex-row gap-20 items-center justify-center mt-52">
+      <div className="flex flex-col w-1/2 lg:px-10">
         <motion.h1
-          className="text-5xl font-semibold"
+          className="lg:text-5xl font-semibold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
@@ -27,9 +27,9 @@ export default function Hero() {
           <TypeAnimation
             sequence={[
               3000,
-              "Frontend Developer",
+              "Web Developer",
               3000,
-              "HTML, CSS/SASS, JavaScript/TypeScript",
+              "HTML, CSS, JavaScript/TypeScript",
               3000,
               "TailwindCSS, React.js, Next.js 14",
               3000,

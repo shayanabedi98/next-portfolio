@@ -81,7 +81,7 @@ export default function AboutMe() {
         >
           <Image
             className="object-cover w-[600px] h-[600px] rounded-xl"
-            src="/assets/shayan.jpg"
+            src="/assets/code-screen.jpg"
             alt="Shayan Abedi selfie"
             width={620}
             height={620}
