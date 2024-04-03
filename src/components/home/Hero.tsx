@@ -8,9 +8,9 @@ import { TypeAnimation } from "react-type-animation";
 export default function Hero() {
   return (
     <div className="flex flex-col lg:flex-row gap-20 items-center justify-center mt-52">
-      <div className="flex flex-col w-1/2 lg:px-10">
+      <div className="flex flex-col text-center lg:w-1/2 lg:px-10">
         <motion.h1
-          className="lg:text-5xl font-semibold"
+          className="text-3xl lg:text-5xl font-semibold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
@@ -19,7 +19,7 @@ export default function Hero() {
           <span className="text-secondary-color">Shayan Abedi</span>.
         </motion.h1>
         <motion.div
-          className="mt-content2 text-xl"
+          className="mt-content2 text-base"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 1 }}
@@ -41,7 +41,7 @@ export default function Hero() {
         </motion.div>
       </div>
       <motion.div
-        className="flex w-1/2 justify-end"
+        className="flex lg:w-1/2 justify-end"
         initial={{ opacity: 0, filter: "blur(10px)" }}
         animate={{ opacity: 1, filter: "blur(0px)" }}
         transition={{

@@ -104,7 +104,7 @@ export default function Projects() {
       >
         My <span className="text-secondary-color">Projects</span>
       </motion.h2>
-      <div className="mt-content grid grid-cols-2 gap-10">
+      <div className="mt-content grid grid-cols-1 xl:grid-cols-2 gap-10">
         {inView &&
           projectsList.map((item, index) => {
             return (

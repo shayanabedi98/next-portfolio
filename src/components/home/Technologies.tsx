@@ -59,7 +59,7 @@ export default function Technologies() {
       >
         My <span className="text-secondary-color">Technologies</span>
       </motion.h2>
-      <div className="mt-content grid grid-cols-3 gap-x-40 gap-y-16 min-h-[580px]">
+      <div className="mt-content grid grid-cols-1 md:grid-cols-2 gap-x-40 gap-y-16 min-h-[580px]">
         {inView &&
           technologiesList.map((item, index) => (
             <motion.div

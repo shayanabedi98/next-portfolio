@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} px-24 tracking-widest`}>
+      <body className={`${inter.className} px-4 lg:px-24 tracking-widest`}>
         <Navbar />
         {children}
         <Footer />

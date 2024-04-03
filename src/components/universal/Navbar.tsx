@@ -3,7 +3,7 @@ import Image from "next/image";
 import logo from "@/../public/assets/logo.png";
 import Link from "next/link";
 import NavbarItem from "./NavbarItem";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className="fixed w-full right-0 left-0 px-24 z-[1] bg-primary-color flex justify-between py-5"
+      className="fixed w-full right-0 left-0 px-8 md:px-24 z-[1] bg-primary-color flex justify-between py-5"
       initial={{ top: -100, opacity: 0, filter: "blur(10px)" }}
       animate={{ top: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{
@@ -25,19 +25,29 @@ export default function Navbar() {
       }}
     >
       <motion.div className="flex items-center gap-5">
-        {mobile && (
-          <motion.div className="fixed top-0 left-0 h-screen w-screen bg-primary-color z-10 flex flex-col justify-center items-center gap-4 text-secondary-color font-bold">
-            <div
-              onClick={() => setMobile(false)}
-              className="text-3xl text-secondary-color border-4 border-secondary-color p-1 rounded-full"
+        <AnimatePresence>
+          {mobile && (
+            <motion.div
+              className="fixed top-0 left-0 h-screen w-screen flex flex-col bg-primary-color text-xl z-10 text-secondary-color font-bold px-8 md:px-24 py-9"
+              initial={{ left: "-100%" }}
+              animate={{ left: 0 }}
+              exit={{ left: "-100%" }}
             >
-              <IoCloseSharp />
-            </div>
-            <Link href="/">home</Link>
-            <Link href="/resume">resume</Link>
-            <Link href="/contact">contact</Link>
-          </motion.div>
-        )}
+              <div
+                onClick={() => setMobile(false)}
+                className="absolute text-3xl text-secondary-color border-4 border-secondary-color p-1 rounded-full self-end"
+              >
+                <IoCloseSharp />
+              </div>
+              <div className="flex flex-col justify-center items-center gap-10 h-full">
+                {/* mobile */}
+                <Link onClick={() => setMobile(false)} href="/">home</Link>
+                <Link onClick={() => setMobile(false)} href="/resume">resume</Link>
+                <Link onClick={() => setMobile(false)} href="/contact">contact</Link>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 27, repeat: Infinity, ease: "linear" }}

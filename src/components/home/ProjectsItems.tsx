@@ -40,20 +40,20 @@ export default function ProjectItems({
 
   return (
     <div
-      className="flex relative rounded-xl bg-black shadow-xl border-secondary-color"
+      className="flex flex-col relative rounded-xl bg-black shadow-xl border-secondary-color min-h-96"
       onMouseOver={() => handleMouseOver(index)}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="w-1/2 border-r-2 border-secondary-color">
+      <div className="lg:w-1/2 border-b-2 border-secondary-color">
         <Image
-          className="rounded-l-xl"
+          className="rounded-t-xl"
           src={img}
           alt={alt}
           width={500}
           height={500}
         />
       </div>
-      <div className="flex flex-col w-1/2 py-2 px-3 gap-5">
+      <div className="flex flex-col lg:w-1/2 py-2 px-3 gap-5">
         <h3 className="font-bold text-2xl">{name}</h3>
         <p className="text-neutral-300">{description}</p>
       </div>
