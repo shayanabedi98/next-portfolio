@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <motion.div
-      className="fixed w-full right-0 left-0 px-8 md:px-24 z-[1] bg-primary-color flex justify-between py-5"
+      className="fixed w-full right-0 left-0 px-4 md:px-24 z-[1] bg-primary-color flex justify-between py-5"
       initial={{ top: -100, opacity: 0, filter: "blur(10px)" }}
       animate={{ top: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{
@@ -28,7 +28,7 @@ export default function Navbar() {
         <AnimatePresence>
           {mobile && (
             <motion.div
-              className="fixed top-0 left-0 h-screen w-screen flex flex-col bg-primary-color text-xl z-10 text-secondary-color font-bold px-8 md:px-24 py-9"
+              className="fixed top-0 left-0 h-screen w-screen flex flex-col bg-primary-color text-xl z-10 text-secondary-color font-bold px-4 md:px-24 py-9"
               initial={{ left: "-100%" }}
               animate={{ left: 0 }}
               exit={{ left: "-100%" }}

@@ -12,7 +12,7 @@ export default function AboutMe() {
   return (
     <motion.div className="my-64 flex flex-col justify-center">
       <motion.h2
-        className="text-4xl self-center font-semibold"
+        className="text-3xl self-center font-semibold"
         ref={ref}
         initial={{ opacity: 0 }}
         animate={{
@@ -22,8 +22,8 @@ export default function AboutMe() {
       >
         About <span className="text-secondary-color">Me</span>
       </motion.h2>
-      <div className="flex mt-content gap-20">
-        <div className="flex flex-col items-start justify-center w-1/2">
+      <div className="flex flex-col-reverse xl:flex-row xl:items-center mt-content">
+        <div className="flex flex-col items-start justify-center lg:w-1/2">
           <motion.p
             className="mt-content text-lg"
             initial={{ opacity: 0, filter: "blur(10px)" }}
@@ -68,7 +68,7 @@ export default function AboutMe() {
           </motion.p>
         </div>
         <motion.div
-          className="flex justify-end w-1/2"
+          className="flex justify-center lg:justify-end lg:w-1/2"
           initial={{ opacity: 0, filter: "blur(10px)" }}
           animate={{
             opacity: inView ? 1 : 0,
@@ -80,7 +80,7 @@ export default function AboutMe() {
           }}
         >
           <Image
-            className="object-cover w-[600px] h-[600px] rounded-xl"
+            className="object-cover md:w-[600px] md:h-[600px] rounded-xl"
             src="/assets/code-screen.jpg"
             alt="Shayan Abedi selfie"
             width={620}

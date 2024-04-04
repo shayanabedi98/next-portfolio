@@ -6,7 +6,7 @@ export default function Footer() {
     const year = new Date().getFullYear()
 
   return (
-    <div className="flex flex-col items-center w-2/3 mx-auto justify-center gap-4 text-xs text py-16 border-t-[1px] border-secondary-color">
+    <div className="flex flex-col items-center text-center mx-auto justify-center gap-4 text-xs text py-16 border-t-[1px] border-secondary-color">
       {/* <Link href="/">home</Link>
             <Link href="/resume">resume</Link>
             <Link href="/contact">contact</Link> */}

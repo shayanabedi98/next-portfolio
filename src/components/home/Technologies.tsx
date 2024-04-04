@@ -49,7 +49,7 @@ export default function Technologies() {
   return (
     <div className="mt-64 flex flex-col items-center justify-center">
       <motion.h2
-        className="text-4xl font-semibold"
+        className="text-3xl font-semibold"
         ref={ref}
         initial={{ opacity: 0 }}
         animate={{

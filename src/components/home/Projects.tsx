@@ -94,7 +94,7 @@ export default function Projects() {
   return (
     <div className="mt-64 flex flex-col justify-center">
       <motion.h2
-        className="text-4xl self-center font-semibold"
+        className="text-3xl self-center font-semibold"
         ref={ref}
         initial={{ opacity: 0 }}
         animate={{
@@ -104,7 +104,7 @@ export default function Projects() {
       >
         My <span className="text-secondary-color">Projects</span>
       </motion.h2>
-      <div className="mt-content grid grid-cols-1 xl:grid-cols-2 gap-10">
+      <div className="mt-content justify-items-center grid grid-cols-1 xl:grid-cols-2 gap-10">
         {inView &&
           projectsList.map((item, index) => {
             return (
