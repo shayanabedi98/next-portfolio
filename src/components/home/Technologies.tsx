@@ -49,7 +49,7 @@ export default function Technologies() {
   return (
     <div className="mt-64 flex flex-col items-center justify-center">
       <motion.h2
-        className="text-3xl font-semibold"
+        className="text-3xl sm:text-4xl font-semibold"
         ref={ref}
         initial={{ opacity: 0 }}
         animate={{
@@ -59,7 +59,7 @@ export default function Technologies() {
       >
         My <span className="text-secondary-color">Technologies</span>
       </motion.h2>
-      <div className="mt-content grid grid-cols-1 md:grid-cols-2 gap-x-40 gap-y-16 min-h-[580px]">
+      <div className="mt-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-40 lg:gap-x-8 xl:gap-x-40 gap-y-16 min-h-[580px]">
         {inView &&
           technologiesList.map((item, index) => (
             <motion.div

@@ -36,19 +36,19 @@ export default function ProjectItems({
 
   return (
     <div
-      className="max-w-[450px] flex flex-col relative rounded-xl bg-black shadow-xl border-secondary-color min-h-96"
+      className="max-w-[430px] lg:w-[700px] cursor-pointer flex flex-col relative rounded-xl bg-black shadow-xl min-h-[450px]"
       onClick={() => handleClick(index)}
     >
-      <div className="flex justify-center lg:w-1/2 border-b-2 border-secondary-color">
+      <div className="flex justify-center border-b-2 border-secondary-color">
         <Image
-          className="rounded-t-xl"
+          className="rounded-t-xl object-cover"
           src={img}
           alt={alt}
           width={500}
           height={500}
         />
       </div>
-      <div className="flex flex-col lg:w-1/2 py-2 px-3 gap-5">
+      <div className="flex flex-col py-2 px-3 gap-5">
         <h3 className="font-bold text-2xl">{name}</h3>
         <p className="text-neutral-300">{description}</p>
       </div>
