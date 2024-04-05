@@ -55,7 +55,7 @@ export default function Navbar() {
         >
           <Link
             href="/"
-            className="flex items-center border-secondary-color border-[6px] rounded-full border-solid hover:bg-[rgba(249,30,90,0.3)] hover:scale-[1.2] transition duration-300 ease-in-out"
+            className="flex items-center border-secondary-color border-[6px] rounded-full border-solid max-lg:active:bg-[rgba(249,30,90,0.3)] max-lg:active:scale-[1.2] lg:hover:bg-[rgba(249,30,90,0.3)] lg:hover:scale-[1.2] transition duration-300 ease-in-out"
           >
             <Image src={logo} alt="" className="w-16" />
           </Link>

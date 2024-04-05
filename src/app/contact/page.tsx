@@ -48,9 +48,9 @@ export default function Contact() {
   }
 
   return (
-    <div className="my-64 flex flex-col items-center">
+    <div className="my-52 lg:my-64 flex flex-col items-center">
       <motion.h1
-        className="text-5xl font-semibold"
+        className="text-3xl lg:text-5xl font-semibold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 1 }}
@@ -62,9 +62,9 @@ export default function Contact() {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
         onSubmit={handleSubmit}
-        className="mt-content flex flex-col bg-button-color-2 justify-center items-start p-3 w-[500px] border-box text-primary-color"
+        className="mt-content flex flex-col bg-button-color-2 justify-center items-start w-full max-w-[500px] border-box text-primary-color"
       >
-        <h2 className="text-primary-text-color font-semibold text-2xl mb-1 p-2 ">
+        <h2 className="text-primary-text-color font-semibold text-xl lg:text-2xl mb-1 p-2 ">
           Feel free to reach out to me!
         </h2>
         <div className="flex flex-col w-full my-1 p-2">
