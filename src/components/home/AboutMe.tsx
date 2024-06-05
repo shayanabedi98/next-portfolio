@@ -18,7 +18,7 @@ export default function AboutMe() {
         animate={{
           opacity: inView ? 1 : 0,
         }}
-        transition={{ delay: 0.2, duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         About <span className="text-secondary-color">Me</span>
       </motion.h2>
@@ -32,8 +32,8 @@ export default function AboutMe() {
               filter: inView ? "blur(0px)" : "blur(10px)",
             }}
             transition={{
-              opacity: { delay: 1, duration: 1, ease: "easeInOut" },
-              filter: { delay: 1, duration: 1, ease: "easeInOut" },
+              opacity: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
+              filter: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
             }}
           >
             My journey into the realm of software development began at an
@@ -55,8 +55,8 @@ export default function AboutMe() {
               filter: inView ? "blur(0px)" : "blur(10px)",
             }}
             transition={{
-              opacity: { delay: 1, duration: 1, ease: "easeInOut" },
-              filter: { delay: 1, duration: 1, ease: "easeInOut" },
+              opacity: { delay: 0.7, duration: 0.5, ease: "easeInOut" },
+              filter: { delay: 0.7, duration: 0.5, ease: "easeInOut" },
             }}
           >
             After countless months of head-scratching and keyboard smashing, I
@@ -75,16 +75,16 @@ export default function AboutMe() {
             filter: inView ? "blur(0px)" : "blur(10px)",
           }}
           transition={{
-            opacity: { delay: 1.5, duration: 1, ease: "easeInOut" },
-            filter: { delay: 1.5, duration: 1, ease: "easeInOut" },
+            opacity: { delay: 0.9, duration: 0.5, ease: "easeInOut" },
+            filter: { delay: 0.9, duration: 0.5, ease: "easeInOut" },
           }}
         >
           <Image
-            className="object-cover md:w-[600px] md:h-[600px] rounded-xl"
-            src="/assets/code-screen.jpg"
+            className="object-cover md:w-[600px] md:h-[600px] rounded-xl object-left"
+            src="/assets/code-screen.JPG"
             alt="Shayan Abedi selfie"
-            width={620}
-            height={620}
+            width={1920}
+            height={1080}
           />
         </motion.div>
       </div>

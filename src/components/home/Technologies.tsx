@@ -15,6 +15,10 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import TechnologiesItem from "./TechnologiesItem";
 import { DiMongodb } from "react-icons/di";
+import { SiRedux } from "react-icons/si";
+import { FaWordpressSimple } from "react-icons/fa";
+import { SiDaisyui } from "react-icons/si";
+
 
 export default function Technologies() {
   const { ref, inView } = useInView({
@@ -26,7 +30,7 @@ export default function Technologies() {
     show: (i: number) => ({
       opacity: 1,
       transition: {
-        delay: 1.5 + i * 0.2, // Increase the delay for each item
+        delay: 0.2 + i * 0.2, // Increase the delay for each item
       },
     }),
   };
@@ -44,6 +48,9 @@ export default function Technologies() {
     { name: "Node.js", img: <FaNodeJs /> },
     { name: "Express.js", img: <SiExpress /> },
     { name: "MongoDB", img: <DiMongodb /> },
+    { name: "Redux", img: <SiRedux /> },
+    { name: "Wordpress", img: <FaWordpressSimple /> },
+    { name: "DaisyUI", img: <SiDaisyui /> },
   ];
 
   return (
@@ -55,7 +62,7 @@ export default function Technologies() {
         animate={{
           opacity: inView ? 1 : 0,
         }}
-        transition={{ delay: 0.2, duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         My <span className="text-secondary-color">Technologies</span>
       </motion.h2>

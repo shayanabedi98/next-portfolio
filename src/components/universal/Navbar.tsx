@@ -19,9 +19,9 @@ export default function Navbar() {
       initial={{ top: -100, opacity: 0, filter: "blur(10px)" }}
       animate={{ top: 0, opacity: 1, filter: "blur(0px)" }}
       transition={{
-        top: { delay: 1, duration: 1.2, ease: "easeInOut" },
-        opacity: { delay: 1, duration: 2, ease: "easeInOut" },
-        filter: { delay: 1, duration: 2, ease: "easeInOut" },
+        top: { delay: 0.2, duration: 0.5, ease: "easeInOut" },
+        opacity: { delay: 0.2, duration: 0.5, ease: "easeInOut" },
+        filter: { delay: 0.2, duration: 0.5, ease: "easeInOut" },
       }}
     >
       <motion.div className="flex items-center gap-5">

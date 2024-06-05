@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import resume from "@/../public/assets/resume.webp";
 import { IoMdDownload } from "react-icons/io";
 
 export default function Resume() {
@@ -12,16 +11,16 @@ export default function Resume() {
         className="text-3xl lg:text-5xl font-semibold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         My <span className="text-secondary-color">Resume</span>
       </motion.h1>
       <motion.object
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
         className="hidden mt-content lg:flex justify-center"
-        data="/assets/ShayanAbedi-Resume.pdf"
+        data="/assets/ShayanAbediResume.pdf"
         type="application/pdf"
         width="100%"
         height={1130}
@@ -30,7 +29,7 @@ export default function Resume() {
           Unable to display PDF file. Please download the file instead. {""}
           <a
             className="text-secondary-color font-bold"
-            href="assets/ShayanAbedi-Resume.pdf"
+            href="assets/ShayanAbediResume.pdf"
             target="_blank"
           >
             Download Resume
@@ -46,7 +45,7 @@ export default function Resume() {
         <div>
           <a
             className="text-secondary-color font-bold"
-            href="assets/ShayanAbedi-Resume.pdf"
+            href="assets/ShayanAbediResume.pdf"
             target="_blank"
           >
             <div className="flex items-center gap-4 text-xl">
@@ -56,7 +55,7 @@ export default function Resume() {
           </a>
         </div>
         <div className="max-w-[750px]">
-          <Image src={resume} alt="" className="mt-4" />
+          <Image src="/assets/Resume.JPG" width={1080} height={1920} alt="" className="mt-4" />
         </div>
       </motion.div>
     </div>

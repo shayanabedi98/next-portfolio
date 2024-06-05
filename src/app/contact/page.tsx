@@ -53,14 +53,14 @@ export default function Contact() {
         className="text-3xl lg:text-5xl font-semibold"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.2, duration: 1 }}
+        transition={{ duration: 1 }}
       >
         <span className="text-secondary-color">Contact</span>
       </motion.h1>
       <motion.form
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
         onSubmit={handleSubmit}
         className="mt-content flex flex-col bg-button-color-2 justify-center items-start w-full max-w-[500px] border-box text-primary-color"
       >

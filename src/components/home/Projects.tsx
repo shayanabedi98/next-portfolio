@@ -36,14 +36,24 @@ export default function Projects() {
       tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
     },
     {
-      name: "To-Do App",
+      name: "BeatZilla",
       description:
         "This simple and user-friendly app is a representation of my CRUD capabilities in a simple React project.",
       alt: "",
-      img: "/assets/projects/todo.JPG",
-      href: "https://todo-list-taupe-beta-44.vercel.app/",
-      github: "https://github.com/shayanabedi98/todo-list",
+      img: "/assets/projects/beatzilla.JPG",
+      href: "https://beatzilla.vercel.app/",
+      github: "https://github.com/shayanabedi98/beatzilla",
       tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />],
+    },
+    {
+      name: "MTC Millwork Inc.",
+      description:
+        "This app calculates an Adult's BMI in both imperial and metric units. The result will be displayed next to a short and user-friendly chart explaining the result.",
+      alt: "",
+      img: "/assets/projects/mtc-millwork.JPG",
+      href: "https://mtc-millwork.vercel.app/",
+      github: "https://github.com/shayanabedi98/mtc-millwork",
+      tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />, <SiSass key={uuid()} />],
     },
     {
       name: "TV Show Search App",
@@ -54,16 +64,6 @@ export default function Projects() {
       href: "https://tv-search-react.vercel.app/",
       github: "https://github.com/shayanabedi98/tv-search-react",
       tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />],
-    },
-    {
-      name: "Adult BMI Calculator",
-      description:
-        "This app calculates an Adult's BMI in both imperial and metric units. The result will be displayed next to a short and user-friendly chart explaining the result.",
-      alt: "",
-      img: "/assets/projects/bmi.JPG",
-      href: "https://bmi-calculator-react-tau.vercel.app/",
-      github: "https://github.com/shayanabedi98/bmi-calculator-react",
-      tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />, <SiSass key={uuid()} />],
     },
     {
       name: "Portfolio Website",
@@ -86,7 +86,7 @@ export default function Projects() {
     show: (i: number) => ({
       opacity: 1,
       transition: {
-        delay: 1.5 + i * 0.2, // Increase the delay for each item
+        delay: 0.2 + i * 0.2, // Increase the delay for each item
       },
     }),
   };
@@ -100,7 +100,7 @@ export default function Projects() {
         animate={{
           opacity: inView ? 1 : 0,
         }}
-        transition={{ delay: 0.2, duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         My <span className="text-secondary-color">Projects</span>
       </motion.h2>

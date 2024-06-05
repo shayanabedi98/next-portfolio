@@ -49,7 +49,7 @@ export default function ProjectItems({
         />
       </div>
       <div className="flex flex-col py-2 px-3 gap-5">
-        <h3 className="font-bold text-2xl">{name}</h3>
+        <h3 className="font-medium text-2xl">{name}</h3>
         <p className="text-neutral-300">{description}</p>
       </div>
       <AnimatePresence>

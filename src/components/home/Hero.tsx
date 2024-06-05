@@ -13,7 +13,7 @@ export default function Hero() {
           className="text-3xl sm:text-5xl font-semibold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
         >
           Hi, I&apos;m{" "}
           <span className="text-secondary-color">Shayan Abedi</span>.
@@ -22,7 +22,7 @@ export default function Hero() {
           className="mt-content2 text-base sm:text-xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 1 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
         >
           <TypeAnimation
             sequence={[
@@ -45,8 +45,8 @@ export default function Hero() {
         initial={{ opacity: 0, filter: "blur(10px)" }}
         animate={{ opacity: 1, filter: "blur(0px)" }}
         transition={{
-          opacity: { delay: 2, duration: 1.5, ease: "easeInOut" },
-          filter: { delay: 2, duration: 1.5, ease: "easeInOut" },
+          opacity: { delay:0.2, duration: 0.5, ease: "easeInOut" },
+          filter: { delay: 0.2, duration: 0.5, ease: "easeInOut" },
         }}
       >
         <Image src={avatar} alt="" className="bg-secondary-color rounded-xl" />
