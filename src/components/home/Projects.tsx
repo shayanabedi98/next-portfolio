@@ -10,8 +10,9 @@ import { SiTypescript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaCss3Alt } from "react-icons/fa";
-import { SiSass } from "react-icons/si";
-import {v4 as uuid} from 'uuid'
+import { DiMongodb } from "react-icons/di";
+// import { SiSass } from "react-icons/si";
+import { v4 as uuid } from "uuid";
 
 export default function Projects() {
   const projectsList = [
@@ -23,7 +24,12 @@ export default function Projects() {
       img: "/assets/projects/stonesvillage.JPG",
       href: "https://www.stonesvillage.net/",
       github: "https://github.com/shayanabedi98/stonesvillage-next",
-      tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
+      tech: [
+        <SiNextdotjs key={uuid()} />,
+        <SiReact key={uuid()} />,
+        <SiTypescript key={uuid()} />,
+        <SiTailwindcss key={uuid()} />,
+      ],
     },
     {
       name: "Pantheras Digital Marketing",
@@ -33,7 +39,12 @@ export default function Projects() {
       img: "/assets/projects/pantheras.JPG",
       href: "https://pantheras.ca/",
       github: "https://github.com/shayanabedi98/panthera",
-      tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
+      tech: [
+        <SiNextdotjs key={uuid()} />,
+        <SiReact key={uuid()} />,
+        <SiTypescript key={uuid()} />,
+        <SiTailwindcss key={uuid()} />,
+      ],
     },
     {
       name: "BeatZilla",
@@ -43,7 +54,11 @@ export default function Projects() {
       img: "/assets/projects/beatzilla.JPG",
       href: "https://beatzilla.vercel.app/",
       github: "https://github.com/shayanabedi98/beatzilla",
-      tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />],
+      tech: [
+        <SiReact key={uuid()} />,
+        <IoLogoJavascript key={uuid()} />,
+        <FaCss3Alt key={uuid()} />,
+      ],
     },
     {
       name: "MTC Millwork Inc.",
@@ -51,9 +66,30 @@ export default function Projects() {
         "This app calculates an Adult's BMI in both imperial and metric units. The result will be displayed next to a short and user-friendly chart explaining the result.",
       alt: "",
       img: "/assets/projects/mtc-millwork.JPG",
-      href: "https://mtc-millwork.vercel.app/",
+      href: "https://www.mtcmillwork.com/",
       github: "https://github.com/shayanabedi98/mtc-millwork",
-      tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />, <SiSass key={uuid()} />],
+      tech: [
+        <SiNextdotjs key={uuid()} />,
+        <SiReact key={uuid()} />,
+        <SiTypescript key={uuid()} />,
+        <SiTailwindcss key={uuid()} />,
+      ],
+    },
+    {
+      name: "Tasker",
+      description:
+        "Using React, Next.js, MongoDB, and Prisma, I built a user-friendly task management web application with CRUD operations through custom APIs and authentication.",
+      alt: "",
+      img: "/assets/projects/tasker.JPG",
+      href: "https://tasker-coral-kappa.vercel.app/",
+      github: "https://github.com/shayanabedi98/tasker",
+      tech: [
+        <SiNextdotjs key={uuid()} />,
+        <SiReact key={uuid()} />,
+        <SiTypescript key={uuid()} />,
+        <SiTailwindcss key={uuid()} />,
+        <DiMongodb key={uuid()} />,
+      ],
     },
     {
       name: "TV Show Search App",
@@ -63,18 +99,23 @@ export default function Projects() {
       img: "/assets/projects/tv.JPG",
       href: "https://tv-search-react.vercel.app/",
       github: "https://github.com/shayanabedi98/tv-search-react",
-      tech: [<SiReact key={uuid()} />, <IoLogoJavascript key={uuid()} />, <FaCss3Alt key={uuid()} />],
+      tech: [
+        <SiReact key={uuid()} />,
+        <IoLogoJavascript key={uuid()} />,
+        <FaCss3Alt key={uuid()} />,
+      ],
     },
-    {
-      name: "Portfolio Website",
-      description:
-        "This current website was built using Next.js. It will be one that I will constantly update and improve over time. Feel free to check out the source code for this too!",
-      alt: "",
-      img: "/assets/projects/portfolio.JPG",
-      href: "https://shayanabedi.com",
-      github: "https://github.com/shayanabedi98/next-portfolio",
-      tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
-    },
+
+    // {
+    //   name: "Portfolio Website",
+    //   description:
+    //     "This current website was built using Next.js. It will be one that I will constantly update and improve over time. Feel free to check out the source code for this too!",
+    //   alt: "",
+    //   img: "/assets/projects/portfolio.JPG",
+    //   href: "https://shayanabedi.com",
+    //   github: "https://github.com/shayanabedi98/next-portfolio",
+    //   tech: [<SiNextdotjs key={uuid()} />, <SiReact key={uuid()} />, <SiTypescript key={uuid()} />, <SiTailwindcss key={uuid()} />],
+    // },
   ];
 
   const { ref, inView } = useInView({

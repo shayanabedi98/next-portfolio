@@ -17,7 +17,7 @@ import TechnologiesItem from "./TechnologiesItem";
 import { DiMongodb } from "react-icons/di";
 import { SiRedux } from "react-icons/si";
 import { FaWordpressSimple } from "react-icons/fa";
-import { SiDaisyui } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
 
 
 export default function Technologies() {
@@ -50,7 +50,7 @@ export default function Technologies() {
     { name: "MongoDB", img: <DiMongodb /> },
     { name: "Redux", img: <SiRedux /> },
     { name: "Wordpress", img: <FaWordpressSimple /> },
-    { name: "DaisyUI", img: <SiDaisyui /> },
+    { name: "Prisma", img: <SiPrisma /> },
   ];
 
   return (

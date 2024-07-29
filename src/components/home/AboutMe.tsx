@@ -55,8 +55,8 @@ export default function AboutMe() {
               filter: inView ? "blur(0px)" : "blur(10px)",
             }}
             transition={{
-              opacity: { delay: 0.7, duration: 0.5, ease: "easeInOut" },
-              filter: { delay: 0.7, duration: 0.5, ease: "easeInOut" },
+              opacity: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
+              filter: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
             }}
           >
             After countless months of head-scratching and keyboard smashing, I
@@ -75,8 +75,8 @@ export default function AboutMe() {
             filter: inView ? "blur(0px)" : "blur(10px)",
           }}
           transition={{
-            opacity: { delay: 0.9, duration: 0.5, ease: "easeInOut" },
-            filter: { delay: 0.9, duration: 0.5, ease: "easeInOut" },
+            opacity: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
+            filter: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
           }}
         >
           <Image

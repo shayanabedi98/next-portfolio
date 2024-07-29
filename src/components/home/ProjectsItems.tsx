@@ -90,7 +90,7 @@ export default function ProjectItems({
               exit={{ transition: { delay: 0 }, opacity: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <h3 className="absolute font-bold text-2xl text-secondary-color">
+              <h3 className="absolute mt-2 font-bold text-2xl text-secondary-color">
                 Technologies
               </h3>
               <div className="flex items-center gap-10 text-3xl h-full">
