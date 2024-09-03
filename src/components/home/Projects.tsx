@@ -18,7 +18,7 @@ export default function Projects() {
       </h2>
       <div className="mt-content flex w-[90%] flex-wrap items-center justify-center gap-6">
         {projects.map((item, index) => (
-          <div className="relative w-full">
+          <div key={index} className="relative w-full">
             <Image
               onClick={() => {
                 setShowInfo(true);
@@ -29,7 +29,7 @@ export default function Projects() {
               width={1000}
               height={1000}
               quality={95}
-              className="object-cover min-h-80"
+              className="min-h-80 object-cover"
             />
             {showInfo && index == indexClicked && (
               <div
@@ -37,9 +37,9 @@ export default function Projects() {
                   setShowInfo(false);
                   setIndexClick(index);
                 }}
-                className="absolute left-0 top-0 flex h-full w-full flex-col justify-center gap-2 sm:gap-4 bg-primary-color bg-opacity-95 px-2 py-4"
+                className="absolute left-0 top-0 flex h-full w-full flex-col justify-center gap-2 bg-primary-color bg-opacity-95 px-2 py-4 sm:gap-4"
               >
-                <h3 className="text-base sm:text-2xl font-bold">{item.name}</h3>
+                <h3 className="text-base font-bold sm:text-2xl">{item.name}</h3>
                 <div className="flex flex-col sm:gap-2">
                   {item.description.map((desc, index) => (
                     <p key={index} className="text-xs sm:text-sm">
