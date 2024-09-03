@@ -6,27 +6,23 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
-        "primary-color": "var(--primary-color)",
-        "secondary-color": "var(--secondary-color)",
-        "accent-color": "var(--accent-color)",
+        "primary-color": "#0e0e0e",
+        "secondary-color": "#f91e5a",
+        "accent-color": "#be0436",
         "primary-text-color": "var(--primary-text-color)",
-        "secondary-text-color": "var(--secondary-text-color)"
+        "secondary-text-color": "var(--secondary-text-color)",
         // "": "var()",
       },
       margin: {
-        "content": "var(--m-content)",
-        "content2": "var(--m-content2)",
-        "div": "var(--m-div)",
-        "div2": "var(--m-div2)",
-      }
+        content: "var(--m-content)",
+        content2: "var(--m-content2)",
+        div: "var(--m-div)",
+        div2: "var(--m-div2)",
+      },
     },
   },
   plugins: [],

@@ -1,7 +1,5 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -19,22 +17,7 @@ import { SiRedux } from "react-icons/si";
 import { FaWordpressSimple } from "react-icons/fa";
 import { SiPrisma } from "react-icons/si";
 
-
 export default function Technologies() {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
-
-  const variants = {
-    hidden: { opacity: 0 },
-    show: (i: number) => ({
-      opacity: 1,
-      transition: {
-        delay: 0.2 + i * 0.2, // Increase the delay for each item
-      },
-    }),
-  };
-
   const technologiesList = [
     { name: "HTML", img: <FaHtml5 /> },
     { name: "CSS", img: <IoLogoCss3 /> },
@@ -55,30 +38,15 @@ export default function Technologies() {
 
   return (
     <div className="mt-64 flex flex-col items-center justify-center">
-      <motion.h2
-        className="text-3xl sm:text-4xl font-semibold"
-        ref={ref}
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: inView ? 1 : 0,
-        }}
-        transition={{ duration: 0.5 }}
-      >
+      <h2 className="text-3xl sm:text-4xl font-semibold">
         My <span className="text-secondary-color">Technologies</span>
-      </motion.h2>
+      </h2>
       <div className="mt-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-40 lg:gap-x-8 xl:gap-x-40 gap-y-16 min-h-[580px]">
-        {inView &&
-          technologiesList.map((item, index) => (
-            <motion.div
-              key={index}
-              custom={index}
-              variants={variants}
-              initial="hidden"
-              animate="show"
-            >
-              <TechnologiesItem icon={item.img} name={item.name} />
-            </motion.div>
-          ))}
+        {technologiesList.map((item, index) => (
+          <div key={index}>
+            <TechnologiesItem icon={item.img} name={item.name} />
+          </div>
+        ))}
       </div>
     </div>
   );

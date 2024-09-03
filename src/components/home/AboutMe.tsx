@@ -1,41 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 export default function AboutMe() {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
-
   return (
-    <motion.div className="my-64 flex flex-col justify-center">
-      <motion.h2
-        className="text-3xl sm:text-4xl self-center font-semibold"
-        ref={ref}
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: inView ? 1 : 0,
-        }}
-        transition={{ duration: 0.5 }}
-      >
+    <div className="my-64 flex flex-col justify-center">
+      <h2 className="self-center text-3xl font-semibold sm:text-4xl">
         About <span className="text-secondary-color">Me</span>
-      </motion.h2>
-      <div className="flex flex-col-reverse xl:flex-row xl:items-center mt-content">
+      </h2>
+      <div className="mt-content flex flex-col-reverse xl:flex-row xl:items-center">
         <div className="flex flex-col items-start justify-center xl:w-1/2">
-          <motion.p
-            className="mt-content text-lg max-w-[600px] mx-auto"
-            initial={{ opacity: 0, filter: "blur(10px)" }}
-            animate={{
-              opacity: inView ? 1 : 0,
-              filter: inView ? "blur(0px)" : "blur(10px)",
-            }}
-            transition={{
-              opacity: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
-              filter: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
-            }}
-          >
+          <p className="mx-auto mt-content max-w-[600px] text-lg">
             My journey into the realm of software development began at an
             unexpected crossroad. I studied Business Administration at George
             Brown College in Toronto before deciding to step into the field of
@@ -46,48 +21,26 @@ export default function AboutMe() {
             language, along with the many frameworks and libraries in its
             ecosystem. I&apos;ve achieved this goal through many tutorials,
             courses, and projects.
-          </motion.p>
-          <motion.p
-            className="mt-content text-lg max-w-[600px] mx-auto"
-            initial={{ opacity: 0, filter: "blur(10px)" }}
-            animate={{
-              opacity: inView ? 1 : 0,
-              filter: inView ? "blur(0px)" : "blur(10px)",
-            }}
-            transition={{
-              opacity: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
-              filter: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
-            }}
-          >
+          </p>
+          <p className="mx-auto mt-content max-w-[600px] text-lg">
             After countless months of head-scratching and keyboard smashing, I
-            finally got to build a website for my father&apos;s business in Next.js,
-            along with starting my own digital marketing agency with a couple of
-            friends. My passion for creativity and building has brought me far
-            as I continue to learn new technologies in this constantly improving
-            industry.
-          </motion.p>
+            finally got to build a website for my father&apos;s business in
+            Next.js, along with starting my own digital marketing agency with a
+            couple of friends. My passion for creativity and building has
+            brought me far as I continue to learn new technologies in this
+            constantly improving industry.
+          </p>
         </div>
-        <motion.div
-          className="flex justify-center xl:justify-end xl:w-1/2"
-          initial={{ opacity: 0, filter: "blur(10px)" }}
-          animate={{
-            opacity: inView ? 1 : 0,
-            filter: inView ? "blur(0px)" : "blur(10px)",
-          }}
-          transition={{
-            opacity: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
-            filter: { delay: 0.5, duration: 0.5, ease: "easeInOut" },
-          }}
-        >
+        <div className="flex justify-center xl:w-1/2 xl:justify-end">
           <Image
-            className="object-cover md:w-[600px] md:h-[600px] rounded-xl object-left"
+            className="rounded-xl object-cover object-left md:h-[600px] md:w-[600px]"
             src="/assets/code-screen.jpg"
             alt="Shayan Abedi selfie"
             width={1920}
             height={1080}
           />
-        </motion.div>
+        </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
